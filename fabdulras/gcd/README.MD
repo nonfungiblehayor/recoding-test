@@ -1,8 +1,7 @@
-# Gcd
+# gcd
 
 ## Instructions
 Write a function that takes two uint representing two strictly positive integers and returns their greatest common divisor. If any of the input numbers is 0, the function should return 0.
-
 ---
 
 ## Expected Function
@@ -32,6 +31,7 @@ func main() {
 ```
 
 ## Output
+
 ```go
 $ go run .
 2
@@ -39,4 +39,3 @@ $ go run .
 7
 1
 $
-```
