@@ -13,7 +13,7 @@ Write a function called FishAndChips() that takes an int and returns a string.
 ## Expected Function
 
 ```go
-func LastWord(s string) string{
+func FishAndChips(n int) string {
 
 }
 ```
@@ -29,17 +29,16 @@ import (
 )
 
 func main() {
-	fmt.Print(piscine.LastWord("this        ...       is sparta, then again, maybe    not"))
-	fmt.Print(piscine.LastWord(" lorem,ipsum "))
-	fmt.Print(piscine.LastWord(" "))
+	fmt.Println(piscine.FishAndChips(4))
+	fmt.Println(piscine.FishAndChips(9))
+	fmt.Println(piscine.FishAndChips(6))
 }
 ```
 
 ## Output
 ```go
 $ go run . | cat -e
-not$
-lorem,ipsum$
-$
-$
+fish$
+chips$
+fish and chips$
 ```
