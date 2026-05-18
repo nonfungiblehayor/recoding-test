@@ -4,15 +4,11 @@
 Write a program that prints in descending order on a single line all unique combinations of three different digits so that the first digit is greater than the second and the second is greater than the third.
 
 These combinations are separated by a comma and a space.
+
+999 or 000 are not valid combinations because the digits are not different.
+
+789 should not be shown because the first digit is not greater than the second.
 ---
-
-## Expected Function
-
-```go
-func Chunk(slice []int, size int) {
-
-}
-```
 
 ## Output
 
