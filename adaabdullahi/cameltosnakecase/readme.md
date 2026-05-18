@@ -1,14 +1,30 @@
-# Gcd
+# cameltosnakecase
 
 ## Instructions
-Write a function that takes two uint representing two strictly positive integers and returns their greatest common divisor. If any of the input numbers is 0, the function should return 0.
+Write a function that converts a string from camelCase to snake_case.
+
+    If the string is empty, return an empty string.
+    If the string is not camelCase, return the string unchanged.
+    If the string is camelCase, return the snake_case version of the string.
+
+For this exercise you need to know that camelCase has two different writing alternatives that will be accepted:
+
+    lowerCamelCase
+    UpperCamelCase
+
+Rules for writing in camelCase:
+
+    The word does not end on a capitalized letter (CamelCasE).
+    No two capitalized letters shall follow directly each other (CamelCAse).
+    Numbers or punctuation are not allowed in the word anywhere (camelCase1).
+
 
 ---
 
 ## Expected Function
 
 ```go
-func Gcd(a, b uint) uint {
+func CamelToSnakeCase(s string) string{
 
 }
 ```
@@ -20,23 +36,25 @@ package main
 
 import (
 	"fmt"
-	"piscine"
 )
 
 func main() {
-	fmt.Println(piscine.Gcd(42, 10))
-	fmt.Println(piscine.Gcd(42, 12))
-	fmt.Println(piscine.Gcd(14, 77))
-	fmt.Println(piscine.Gcd(17, 3))
+	fmt.Println(CamelToSnakeCase("HelloWorld"))
+	fmt.Println(CamelToSnakeCase("helloWorld"))
+	fmt.Println(CamelToSnakeCase("camelCase"))
+	fmt.Println(CamelToSnakeCase("CAMELtoSnackCASE"))
+	fmt.Println(CamelToSnakeCase("camelToSnakeCase"))
+	fmt.Println(CamelToSnakeCase("hey2"))
 }
 ```
 
 ## Output
+
 ```go
 $ go run .
-2
-6
-7
-1
-$
-```
+Hello_World
+hello_World
+camel_Case
+CAMELtoSnackCASE
+camel_To_Snake_Case
+hey2
